@@ -1,0 +1,21 @@
+{
+  "name": "happy",
+  "description": "project creating during and nlw#3",
+  "author": "Patrick Silva <contato@patricksilva.dev>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:web": "yarn workspace @happy/web dev",
+    "dev:api": "yarn workspace @happy/api dev"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
